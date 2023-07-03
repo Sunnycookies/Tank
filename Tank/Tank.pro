@@ -13,12 +13,14 @@ SOURCES += \
     gamescene.cpp \
     main.cpp \
     gamewindow.cpp \
+    menu.cpp \
     tankbase.cpp
 
 HEADERS += \
     bullet.h \
     gamescene.h \
     gamewindow.h \
+    menu.h \
     tankbase.h
 
 FORMS += \
@@ -28,3 +30,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc
